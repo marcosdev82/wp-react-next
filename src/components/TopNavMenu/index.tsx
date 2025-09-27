@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TopNavMenu() {
     const menuItems = [
         "ATUALIZA SBOT",
@@ -17,12 +19,12 @@ export default function TopNavMenu() {
                 <ul className="flex flex-wrap gap-4 py-2 text-white-800 font-medium text-[10px] uppercase">
                     {menuItems.map((item) => (
                         <li key={item}>
-                            <a
+                            <Link
                                 href="#"
                                 className="hover:text-brand transition-colors"
                             >
                                 {item}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

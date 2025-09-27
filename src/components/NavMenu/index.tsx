@@ -1,38 +1,26 @@
+import Link from "next/link";
+
 export default function NavMenu() {
+    const menuItems = [
+        { label: "Sobre a SBOT", href: "sobre" },
+        { label: "Associados", href: "associados" },
+        { label: "História da ortopedia", href: "historia" },
+        { label: "Graduando e residentes", href: "graduando" },
+        { label: "A ortopedia e a saúde", href: "saude" },
+        { label: "Localize o ortopedista", href: "localize" },
+    ];
+
     return (
         <nav>
             <div className="mx-auto px-4">
                 <ul className="flex flex-wrap gap-6 py-4 text-gray-800 font-medium text-[12px] uppercase">
-                    <li>
-                        <a href="#sobre" className="hover:text-brand transition-colors">
-                            Sobre a SBOT
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#associados" className="hover:text-brand transition-colors">
-                            Associados
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#historia" className="hover:text-brand transition-colors">
-                            História da ortopedia
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#graduando" className="hover:text-brand transition-colors">
-                            Graduando e residentes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#saude" className="hover:text-brand transition-colors">
-                            A ortopedia e a saúde
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#localize" className="hover:text-brand transition-colors">
-                            Localize o ortopedista
-                        </a>
-                    </li>
+                    {menuItems.map((item) => (
+                        <li key={item.href}>
+                            <Link href={item.href} className="hover:text-brand transition-colors">
+                                {item.label}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </nav>
