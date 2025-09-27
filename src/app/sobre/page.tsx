@@ -7,8 +7,8 @@ export default function Sobre() {
             <article>
                 <EntryTitle />
 
-                <div className="content p-3 h-40 max-w-[1200px] mx-auto w-full ">
-                    asdfasdfasdf
+                <div className="content py-6 h-60 max-w-[1200px] mx-auto w-full">
+                    fadfasdf
                 </div>
 
             </article>

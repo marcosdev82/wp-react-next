@@ -18,7 +18,7 @@ export default function Header() {
             </div>
 
             <div className="bg-white w-full">
-                <div className="max-w-[1200px] mx-auto w-full h-25 flex justify-between items-center">
+                <div className="max-w-[1200px] mx-auto w-full h-25 flex justify-between items-center px-4">
                     <Link href="/">
                         <Image
                             src="/logo-sbot.png" // <-- use o path direto da pasta public
