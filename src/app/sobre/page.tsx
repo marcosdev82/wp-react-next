@@ -3,15 +3,15 @@ import EntryTitle from "../../components/EntryTitle";
 
 export default function Sobre() {
     return (
-        <section>
-            <article>
-                <EntryTitle />
 
-                <div className="content py-6 h-60 max-w-[1200px] mx-auto w-full">
-                    fadfasdf
+        <article>
+            <EntryTitle>Teste</EntryTitle>
+            <Container>
+                <div className="content py-6 px-3">
+                    Meu conteúdo aqui
                 </div>
+            </Container>
+        </article>
 
-            </article>
-        </section>
     )
 }

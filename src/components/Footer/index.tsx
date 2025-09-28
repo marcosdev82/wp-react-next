@@ -1,25 +1,27 @@
+import Container from "../Container"
+
 export default function Footer() {
     return (
-        <footer>
-            <div className="bg-brand text-white">
-                <div className="max-w-[1200px] h-20 mx-auto w-full flex justify-between items-center  px-4">
-                    <aside>
+        <footer className="bg-brand text-white">
+            <Container>
+                <div className="flex items-center justify-between py-4">
+                    <aside className="px-3">
                         Coluna 1
                     </aside>
-                    <aside>
+                    <aside className="px-3">
                         Coluna 2
                     </aside>
-                    <aside>
+                    <aside className="px-3">
                         Coluna 3
                     </aside>
-                    <aside>
+                    <aside className="px-3">
                         Coluna 4
                     </aside>
-                    <aside>
+                    <aside className="px-3">
                         Coluna 5
                     </aside>
                 </div>
-            </div>
+            </Container>
         </footer>
     )
 } 

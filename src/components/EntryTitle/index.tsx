@@ -1,9 +1,16 @@
-export default function EntryTitle() {
+import { ReactNode } from "react"
+import Container from "../Container"
+
+export default function EntryTitle({ children }: { children: ReactNode }) {
     return (
         <header className="bg-brand">
-            <div className="max-w-[1200px] mx-auto w-full flex items-center justify-between h-20 text-white px-4">
-                <h1>Titulo</h1>
-            </div>
+
+            <Container>
+                <div className="flex items-center justify-between h-20 text-white px-3">
+                    <h1>{children}</h1>
+                </div>
+            </Container>
+
         </header>
     )
 }
