@@ -5,6 +5,8 @@ import AuthButtons from "../AuthButtons/indext";
 import NavMenu from "../NavMenu";
 import TopNavMenu from "../TopNavMenu";
 import Container from "../Container";
+import OffCanvasMenu from "../OffCanvasMenu";
+import ModalExample from "../Modal";
 
 export default function Header() {
     return (
@@ -32,9 +34,11 @@ export default function Header() {
                             />
                         </Link>
                         <NavMenu />
+                        <OffCanvasMenu />
                     </div>
                 </Container>
             </div>
+
         </header>
     );
 }
