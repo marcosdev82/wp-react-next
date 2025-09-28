@@ -15,7 +15,7 @@ export default function TopNavMenu() {
 
     return (
         <nav className="">
-            <div className="max-w-[1200px] mx-auto px-4">
+            <div className="max-w-[1200px] mx-auto px-3">
                 <ul className="flex flex-wrap gap-4 py-2 text-white-800 font-medium text-[10px] uppercase">
                     {menuItems.map((item) => (
                         <li key={item}>

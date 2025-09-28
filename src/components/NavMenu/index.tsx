@@ -12,7 +12,7 @@ export default function NavMenu() {
 
     return (
         <nav>
-            <div className="mx-auto px-4">
+            <div className="mx-auto">
                 <ul className="flex flex-wrap gap-6 py-4 text-gray-800 font-medium text-[12px] uppercase">
                     {menuItems.map((item) => (
                         <li key={item.href}>
