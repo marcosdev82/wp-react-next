@@ -23,7 +23,6 @@ export default function Modal() {
             <AnimatePresence>
                 {isOpen && (
                     <>
-                        {/* Overlay */}
                         <motion.div
                             className="fixed inset-0 bg-black"
                             initial={{ opacity: 0 }}
@@ -32,7 +31,6 @@ export default function Modal() {
                             onClick={toggleModal}
                         />
 
-                        {/* Modal */}
                         <motion.div
                             className="fixed inset-0 flex items-center justify-center"
                             initial={{ opacity: 0, y: -50 }}
