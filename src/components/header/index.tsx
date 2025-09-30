@@ -6,7 +6,6 @@ import NavMenu from "../NavMenu";
 import TopNavMenu from "../TopNavMenu";
 import Container from "../Container";
 import OffCanvasMenu from "../OffCanvasMenu";
-import ModalExample from "../Modal";
 
 export default function Header() {
     return (
