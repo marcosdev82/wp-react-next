@@ -16,7 +16,6 @@ export default function AuthButtons() {
     const handleLogin = (e: React.FormEvent) => {
         e.preventDefault()
         console.log("Login attempt:", { email, password, rememberMe })
-        // Add your login logic here
     }
 
     return (
@@ -40,7 +39,6 @@ export default function AuthButtons() {
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogContent className="fixed inset-0 z-50 flex items-center justify-center">
                     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm" />
-
                     <div className="relative z-50 w-[90%] max-w-md bg-white rounded-xl p-6 shadow-lg border border-gray-200">
                         <DialogHeader>
                             <DialogTitle className="text-2xl font-semibold text-gray-900 text-center">Bem-vindo de volta</DialogTitle>
