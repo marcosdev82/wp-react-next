@@ -1,5 +1,5 @@
-import Container from "../../components/Container";
-import EntryTitle from "../../components/EntryTitle";
+import Container from "../components/Container";
+import EntryTitle from "../components/EntryTitle";
 
 export default function Sobre() {
     return (
