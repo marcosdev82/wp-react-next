@@ -1,3 +1,4 @@
+import Publicidade from "./components/Publicidade/indext";
 import Slider from "./components/Slider";
 
 
@@ -7,6 +8,7 @@ export default function Home() {
     <div className="w-full">
       <Slider />
       <main>
+        <Publicidade />
         <h1>teste</h1>
       </main>
     </div>
