@@ -140,3 +140,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .fixedTop {
+    @apply fixed top-0 left-0 w-full z-50 backdrop-blur-sm;
+    background-color: rgba(252, 252, 252, 0.74);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+}

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <Slider />
-      <main>
+      <main style={{ height: '700px' }}>
         <Publicidade />
         <h1>teste</h1>
       </main>
