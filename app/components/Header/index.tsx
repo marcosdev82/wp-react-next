@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,11 +7,24 @@ import NavMenu from "../NavMenu";
 import TopNavMenu from "../TopNavMenu";
 import Container from "../Container";
 import OffCanvasMenu from "../OffCanvasMenu";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+
+    const [top, setTop] = useState(true);
+
+    useEffect(() => {
+        const scrollHandler = () => {
+            setTop(window.scrollY <= 40);
+        };
+
+        window.addEventListener("scroll", scrollHandler);
+        return () => window.removeEventListener("scroll", scrollHandler);
+    }, []);
+
     return (
-        <header className="shadow-sm z-10 relative">
-            <div className="bg-brand text-white p-1">
+        <header className={`w-full shadow-sm z-10  ${!top ? `fixedTop` : 'relative'}`}>
+            <div className={`bg-brand text-white p-1 ${!top ? `hidden` : 'block'}`}>
                 <Container>
                     <div className="flex justify-between items-center">
                         <TopNavMenu />
@@ -21,7 +35,7 @@ export default function Header() {
                 </Container>
             </div>
 
-            <div className="bg-white w-full">
+            <div className="w-full">
                 <Container>
                     <div className="h-25 flex justify-between items-center px-3">
                         <Link href="/">
@@ -38,6 +52,6 @@ export default function Header() {
                 </Container>
             </div>
 
-        </header>
+        </header >
     );
 }
