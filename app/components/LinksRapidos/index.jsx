@@ -9,7 +9,7 @@ export default function LinksRapidos() {
   const linksRapidos = [
     { id: 1, title: "Eventos", Icon: iconCalendar, url: link, description: "teste 1" },
     { id: 2, title: "Anuidade", Icon: iconCredCard, url: link, description: "teste 2" },
-    { id: 3, title: "Eventos", Icon: iconCalendar, url: link, description: "teste 3" },
+    { id: 3, title: "Localizador profissional", Icon: iconCalendar, url: link, description: "teste 3" },
     { id: 4, title: "Eventos", Icon: iconCalendar, url: link, description: "teste 4" },
     { id: 5, title: "Eventos", Icon: iconCalendar, url: link, description: "teste 5" },
     { id: 6, title: "Eventos", Icon: iconCalendar, url: link, description: "teste 6" },
@@ -40,7 +40,7 @@ export default function LinksRapidos() {
                   <p className="text-xs text-gray-500">{item.description}</p>
                 </a>
               </li>
-            ))}
+            ))} 
           </ul>
         )}
       </Container>
